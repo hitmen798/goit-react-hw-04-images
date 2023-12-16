@@ -1,0 +1,110 @@
+.Searchbar {
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 1100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 63px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #aaf776;
+    background: #f1783f;
+    /* fallback for old browsers */
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ec5a2d, #6ff34e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+        0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.Searchbar .SearchForm {
+    margin: 0 auto;
+    max-width: 700px;
+    height: 40px;
+    background: #bdc3c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #2c3e50, #bdc3c7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.Searchbar .SearchForm {
+    max-width: 370px;
+    padding: 10px 5px;
+    float: left;
+    color: #000;
+    font-weight: 800;
+    border: 0;
+    background: transparent;
+    border-radius: 5px 0 0 5px;
+}
+
+.Searchbar .SearchForm:focus {
+    outline: 0;
+    background: transparent;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.Searchbar .SearchForm .SearchFormButton {
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    fill: rgba(255, 255, 255, 0.8);
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+    margin-left: 15px;
+}
+
+.Searchbar .SearchForm .SearchFormButton:hover {
+
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+        -13px -13px 100px #ffffff;
+    fill: #3f3f3f, ;
+}
+
+.Searchbar .SearchForm .SearchFormButton:active {
+    -webkit-box-shadow: 0px 0px 12px 0px #e1e1e1;
+    box-shadow: 0px 0px 12px 0px #e1e1e1;
+}
+
+.Searchbar .SearchForm .SearchFormButton:focus {
+    outline: 0;
+}
+
+
+.SearchFormInput {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+}
+
+.SearchFormInput:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+        -13px -13px 100px #ffffff;
+}
